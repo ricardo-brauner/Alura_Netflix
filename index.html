@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- declara o documento como HTML5 -->
+<html lang="pt-br">
+<!-- define idioma para português do Brasil -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- define charset para UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- garante responsividade em dispositivos móveis -->
+    <title>Netflix</title>
+    <!-- título da aba do navegador -->
+    <link rel="stylesheet" href="style.css">
+    <!-- link para arquivo de estilo CSS -->
+</head>
+
+<body>
+    <!-- botão de ação (inspirado no ícone de reprodução da Netflix) -->
+    <button class="play-button" aria-label="Assistir agora">
+        ▶
+    </button>
+
+    <!-- botão para alternar entre modo escuro e claro -->
+    <button id="theme-toggle" class="theme-toggle-button" aria-label="Alternar modo">
+        <span class="icon-sun">☀️</span>
+        <span class="icon-moon">🌙</span>
+    </button>
+
+    <header>
+        <!-- cabeçalho principal -->
+        <h1>Quem está assistindo?</h1>
+        <!-- título da página -->
+    </header>
+
+    <main>
+        <!-- área de conteúdo principal -->
+        <section aria-labelledby="lista-perfis">
+            <!-- título invisível para leitores de tela -->
+            <ul class="profiles">
+                <!-- lista de perfis em linha -->
+                <li class="profile active">
+                    <!-- perfil ativo selecionado, semelhante ao Netflix -->
+                    <a href="catalogo/catalogo.html">
+                        <figure>
+                            <img src="assets/perfil-1.jpg" alt="Avatar do Mario Bross">
+                            <!-- imagem do perfil -->
+                            <figcaption>Super Mario</figcaption>
+                            <!-- nome do perfil -->
+                        </figure>
+                    </a>
+                </li>
+                <li class="profile">
+                    <a href="catalogo/catalogo.html">
+                        <figure>
+                            <img src="assets/perfil-2.jpg" alt="Avatar do Luigi">
+                            <figcaption>Luigi</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li class="profile">
+                    <a href="catalogo/catalogo.html">
+                        <figure>
+                            <img src="assets/perfil-3.jpg" alt="Avatar do Donkey Kong">
+                            <figcaption>Donkey Kong</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li class="profile">
+                    <a href="catalogo/catalogo.html">
+                        <figure>
+                            <img src="assets/perfil-4.jpg" alt="Avatar Meggie Simpson">
+                            <figcaption>Crianças</figcaption>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- script para funcionalidade de alternância de tema -->
+    <script src="script.js"></script>
+</body>
+
+</html>
